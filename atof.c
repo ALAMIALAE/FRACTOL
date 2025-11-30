@@ -6,7 +6,7 @@
 /*   By: aben-dri <aben-dri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 17:06:44 by aben-dri          #+#    #+#             */
-/*   Updated: 2025/02/08 17:09:00 by aben-dri         ###   ########.fr       */
+/*   Updated: 2025/02/08 19:59:10 by aben-dri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,12 @@ int	process_sign(const char **str)
 		(*str)++;
 	}
 	return (sign);
+}
+
+void	skip_whitespace(const char **str)
+{
+	while (**str == ' ' || (**str >= 9 && **str <= 13))
+		(*str)++;
 }
 
 double	ft_atof(const char *str)

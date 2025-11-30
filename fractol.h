@@ -6,7 +6,7 @@
 /*   By: aben-dri <aben-dri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 16:24:48 by aben-dri          #+#    #+#             */
-/*   Updated: 2025/02/08 16:24:53 by aben-dri         ###   ########.fr       */
+/*   Updated: 2025/02/08 20:07:14 by aben-dri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,8 @@
 
 # include "/usr/include/minilibx-linux/mlx.h"
 # include <math.h>
-# include <stdio.h>
 # include <stdlib.h>
-# include <string.h>
+# include <stdio.h>
 
 # define WIDTH 800
 # define HEIGHT 800
@@ -90,5 +89,8 @@ int				ft_close(t_fractol *fractol);
 void			fractol_mlx(t_fractol *fractol);
 void			zoom(t_fractol *fractal, int x, int y, int zoom_type);
 int				mouse_hook(int mouse_code, int x, int y, t_fractol *fractal);
-
+double			process_integer(const char **str);
+double			process_fraction(const char **str, double nb);
+int				process_sign(const char **str);
+void			skip_whitespace(const char **str);
 #endif

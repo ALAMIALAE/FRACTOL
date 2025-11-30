@@ -6,7 +6,7 @@
 /*   By: aben-dri <aben-dri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 15:32:01 by aben-dri          #+#    #+#             */
-/*   Updated: 2025/02/08 16:16:11 by aben-dri         ###   ########.fr       */
+/*   Updated: 2025/02/08 20:01:46 by aben-dri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,6 @@ int	key_hook(int keycode, t_fractol *fractol)
 	{
 		fractol->iterations += 10;
 	}
-	printf("Keycode = %d\n", keycode);
 	fractol_render(fractol);
 	return (0);
 }

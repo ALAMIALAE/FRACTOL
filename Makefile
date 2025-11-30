@@ -1,5 +1,5 @@
 CC = cc
-CFLAGS = -I. -I$(MLX_DIR)
+CFLAGS = -Wall -Wextra -Werror -I. -I$(MLX_DIR)
 
 MLX_DIR = /usr/include/minilibx-linux
 MLX_LIB = $(MLX_DIR)/libmlx_Linux.a
